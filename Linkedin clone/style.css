@@ -1,0 +1,703 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #f3f2ef;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+}
+
+.headpiece {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  line-height: 0.9;
+  background-color: white;
+  border: 1px solid rgb(240, 238, 238);
+}
+
+.searchEngine {
+  width: 33%;
+  margin-left: 8%;
+  display: flex;
+  align-items: center;
+}
+.searchEngine .search {
+  width: 48%;
+  height: 34px;
+  margin-left: 1%;
+  padding: 0 0.8rem 0 40px;
+  background: #EEF3F8;
+  border: 0;
+  border-radius: 5px;
+}
+
+.operations {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+.operations a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+.operations a:hover {
+  color: black;
+  font-weight: 600;
+}
+.operations p {
+  margin: 0;
+  font-size: 12px;
+}
+.operations .premium {
+  color: #915907;
+  max-width: 125px;
+  text-decoration: underline;
+}
+
+.mobileSection {
+  display: none;
+}
+
+.deref {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 5.5% 8% 0 8%;
+}
+
+.content_newest {
+  width: 20%;
+}
+.content_newest .content {
+  display: flex;
+  width: 100%;
+  height: 350px;
+  background-color: white;
+  border-radius: 5px;
+}
+.content_newest .content .coverPhoto {
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+.content_newest .content .profill {
+  width: 35%;
+  border-radius: 50%;
+  margin-top: -40px;
+}
+.content_newest .content .coverImg {
+  font-weight: 500;
+}
+.content_newest .content .coverImg .a {
+  text-decoration: none;
+}
+.content_newest .content .coverImg .nameSurname {
+  color: rgba(65, 64, 64, 0.9019607843);
+}
+.content_newest .content .coverImg .viewProfile {
+  text-align: left;
+  padding: 7% 4% 4% 4%;
+  border-top: 1px solid #f3f2ef;
+  display: flex;
+  justify-content: space-between;
+}
+.content_newest .content .coverImg .viewProfile a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+.content_newest .content .coverImg .viewProfile a:hover {
+  background-color: #f3f2ef;
+}
+.content_newest .content .coverImg .numberData {
+  color: #0A66C2;
+  font-weight: 600;
+}
+.content_newest .content .coverImg .connetcions {
+  text-align: left;
+  padding: 0 4%;
+  display: flex;
+  justify-content: space-between;
+}
+.content_newest .content .coverImg .connetcions a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+.content_newest .content .coverImg .networkWiden {
+  text-align: left;
+  padding: 0 4% 0 4%;
+}
+.content_newest .content .coverImg .networkWiden a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.9019607843);
+}
+.content_newest .content .coverImg .accesing a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+.content_newest .content .coverImg .accesing .access {
+  border-top: 1px solid #f3f2ef;
+  text-align: start;
+  padding: 2% 4% 0 4%;
+}
+.content_newest .content .coverImg .accesing .iconBox {
+  margin-top: -7%;
+  margin-bottom: 2%;
+}
+.content_newest .content .coverImg .accesing .iconBox .mercado-match {
+  margin-bottom: -9px;
+}
+.content_newest .content .coverImg .accesing .iconBox .premium {
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.9019607843);
+}
+.content_newest .content .coverImg .myItems {
+  border-top: 1px solid #f3f2ef;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 4%;
+}
+.content_newest .content .coverImg .myItems .textItems {
+  padding: 0 0 2% 4%;
+  color: rgba(0, 0, 0, 0.9019607843);
+}
+.content_newest .newest {
+  display: flex;
+  width: 100%;
+  height: 420px;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 3%;
+  border: 1px solid rgb(240, 238, 238);
+}
+.content_newest .newest span {
+  display: flex;
+  justify-content: flex-start;
+  margin: 16px 0 0 10px;
+}
+.content_newest .newest ul {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  padding: 10px 10px 0 10px;
+}
+.content_newest .newest ul a {
+  text-decoration: none;
+}
+.content_newest .newest ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding-bottom: 3%;
+  font-weight: 500;
+}
+.content_newest .newest ul li span {
+  margin-left: 6px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0;
+  padding-left: 5px;
+}
+.content_newest .newest a {
+  text-decoration: none;
+}
+.content_newest .newest .groups {
+  color: #0A66C2;
+  font-weight: 600;
+  margin-top: 0;
+}
+.content_newest .newest .groups a {
+  text-decoration: none;
+}
+.content_newest .newest .more {
+  margin-top: -9%;
+}
+.content_newest .newest .more a {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 600;
+}
+.content_newest .newest .activities span {
+  font-weight: 600;
+  color: #0A66C2;
+  padding: 10px 40px 0 5px;
+}
+.content_newest .newest .activities .activitiesPlus {
+  justify-content: space-between;
+}
+.content_newest .newest .activities .activitiesPlus .plus {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 25px;
+  margin-right: -15%;
+}
+.content_newest .discover {
+  border-top: 1px solid #f3f2ef;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px;
+  width: 105%;
+}
+.content_newest .discover a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.shares {
+  width: 49%;
+  height: 700px;
+  border-radius: 5px;
+}
+.shares .despatch {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+.shares .despatch .avatarDespatch {
+  display: flex;
+  padding: 2%;
+}
+.shares .despatch .avatarDespatch .avatar {
+  margin-right: 2%;
+}
+.shares .despatch .avatarDespatch img {
+  width: 48px;
+}
+.shares .despatch .avatarDespatch button {
+  margin: 4px 0;
+  font-size: 12px;
+  flex-grow: 1;
+  padding: 3%;
+  background: white;
+  text-align: start;
+  border: 1px solid #c5c4c2;
+  border-radius: 35px;
+}
+.shares .despatch .avatarDespatch button span {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+}
+.shares .despatch .plug-ins {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: none;
+  padding-bottom: 1%;
+}
+.shares .despatch .plug-ins a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  align-items: center;
+  display: flex;
+}
+.shares .despatch .plug-ins span {
+  margin: 0 0 0 8px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+}
+.shares .despatch .plug-ins .addPhotoButton {
+  border: none;
+  background: none;
+}
+.shares .despatch .plug-ins .addPhotoButton svg {
+  color: #378FE9;
+}
+.shares .despatch .plug-ins .addVideoButton {
+  border: none;
+  background: none;
+}
+.shares .despatch .plug-ins .addVideoButton svg {
+  color: #5F9B41;
+}
+.shares .despatch .plug-ins .addActivity svg {
+  color: #C37D16;
+}
+.shares .despatch .plug-ins .addWriting svg {
+  color: #E16745;
+}
+.shares .line {
+  border: none;
+  border-top: 1px solid rgb(173, 173, 173);
+  width: 100%;
+}
+.shares .new_despatch {
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+}
+.shares .new_despatch .postAdd {
+  width: 100%;
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.5px solid rgb(236, 236, 236);
+}
+.shares .new_despatch .postAdd .postPerson {
+  margin: 1% 2%;
+  display: flex;
+  align-items: center;
+}
+.shares .new_despatch .postAdd .postPerson a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 700;
+}
+.shares .new_despatch .postAdd .threePoint {
+  margin: 1% 2%;
+}
+.shares .new_despatch .participant {
+  display: flex;
+}
+.shares .new_despatch .participant .participantPerson {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 0 8px;
+  margin: 2px 12px 0 0;
+}
+.shares .new_despatch .participant .participantPerson .pPhoto {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.shares .new_despatch .participant .participantPerson .pPhoto img {
+  width: 50px;
+  padding: 10px 15px;
+}
+.shares .new_despatch .participant .participantPerson .pName {
+  display: flex;
+}
+.shares .new_despatch .participant .participantPerson .pName .userName {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.9019607843);
+}
+.shares .new_despatch .participant .participantPerson .pName .partConnection {
+  font-size: 14px;
+  margin: 0 0 0 4px;
+}
+.shares .new_despatch .participant .participantPerson .pName .ability {
+  display: block;
+  text-align: start;
+}
+.shares .new_despatch .participant .participantPerson .pName .pTime {
+  text-align: start;
+}
+.shares .new_despatch .participant .participantPerson button {
+  width: 20%;
+  display: flex;
+  justify-content: end;
+  background: none;
+  border: none;
+  color: #0A66C2;
+}
+.shares .new_despatch .participant .participantPerson button span {
+  font-weight: 600;
+  margin-left: 5px;
+}
+.shares .new_despatch .pExplanation .pCe {
+  text-align: start;
+  padding: 1% 2%;
+}
+.shares .new_despatch .pExplanation .pContentExplanation {
+  color: rgba(0, 0, 0, 0.9019607843);
+  font-size: 14px;
+  text-align: start;
+}
+.shares .new_despatch .pExplanation .pContentPhoto img {
+  width: 100%;
+  margin: 10px 0;
+}
+.shares .new_despatch .pExplanation .remark {
+  width: 100%;
+}
+.shares .new_despatch .pExplanation .remark button {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: white;
+  border: none;
+}
+.shares .new_despatch .pExplanation .remark span {
+  font-weight: 600;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 5% 5%;
+}
+
+.advices {
+  width: 25%;
+  height: 350px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 12px;
+}
+.advices .addEfflux {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.advices .addEfflux h2 {
+  font-weight: 500;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.9019607843);
+  margin: 0;
+}
+.advices ul {
+  margin: 0;
+  padding: 0;
+}
+.advices ul li {
+  list-style: none;
+}
+.advices ul .personPhoto {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.advices ul .personContent {
+  text-align: start;
+}
+.advices ul .personContent span {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.9019607843);
+  font-size: 14px;
+  line-height: 0.7;
+}
+.advices ul .personContent p {
+  line-height: 1;
+  margin: 10px 0;
+}
+.advices ul .personContent button {
+  background: none;
+  font-weight: 500;
+  align-items: center;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 6px 16px;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+}
+.advices .allAdvices a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+}
+.advices .allAdvices span {
+  display: flex;
+  padding: 2px 8px;
+  margin-top: 6%;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer .other {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 10% 2% 5% 2%;
+}
+.footer .other li {
+  margin: 4px 8px;
+}
+.footer .other a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.messagingPart {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+  border: 0.5px solid rgb(201, 201, 201);
+  bottom: 0;
+  right: 0;
+  width: 288px;
+  flex-direction: column;
+}
+.messagingPart .messaging {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.messagingPart .messaging .messagingPhoto {
+  display: flex;
+  margin-left: -2%;
+  margin-top: 2%;
+}
+.messagingPart .messaging .messagingPhoto img {
+  width: 35px;
+  margin: 0;
+}
+.messagingPart .messaging .messagingPhoto button {
+  background-color: white;
+  border: none;
+}
+.messagingPart .messaging .messagingPhoto button a {
+  text-decoration: none;
+  color: rgba(39, 39, 39, 0.9019607843);
+  font-weight: 600;
+}
+.messagingPart .messaging .messagingPhoto button span {
+  font-style: 12px;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+}
+.messagingPart .messaging .messagingPlugins {
+  display: flex;
+}
+.messagingPart .messaging .messagingPlugins button {
+  background-color: white;
+  border: none;
+  font-weight: 800;
+}
+.messagingPart .messaging .messagingPlugins button a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+.messagingPart .messagesConcealed {
+  width: 100%;
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+}
+.messagingPart .messagesConcealed .messageSearch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f2ef;
+  width: 90%;
+  height: 30px;
+  margin: 2% 5%;
+  border-radius: 5px;
+}
+.messagingPart .messagesConcealed .messageSearch input {
+  border: none;
+  background: none;
+}
+.messagingPart .messagesConcealed .messageSearch .searchVariants button {
+  border: none;
+  background: none;
+}
+.messagingPart .messagesConcealed .inBox {
+  display: flex;
+  margin: 2% 5%;
+}
+.messagingPart .messagesConcealed .inBox .inBoxImage img {
+  width: 50px;
+}
+.messagingPart .messagesConcealed .inBox .inBoxPersonalInfo {
+  border-bottom: 1px solid rgb(218, 218, 218);
+}
+.messagingPart .messagesConcealed .inBox .inBoxPersonalInfo .inBoxPersonalName {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.messagingPart .messagesConcealed .inBox .inBoxPersonalInfo .inBoxPersonalName h3 {
+  margin: 0 2%;
+}
+.messagingPart .messagesConcealed .inBox .inBoxPersonalInfo .inBoxMessage {
+  margin: 2%;
+}
+.messagingPart .messagesConcealed .inBox .inBoxPersonalInfo .inBoxMessage p {
+  margin: 2%;
+}
+
+@media screen and (max-width: 1000px) {
+  .headpiece,
+  .content_newest,
+  .advices,
+  .despatch,
+  .line,
+  .messagingPart {
+    display: none;
+  }
+  .mobileSection {
+    display: flex;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    border: 1px solid rgb(240, 238, 238);
+  }
+  .mobileSection .mobileHead {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+  }
+  .mobileSection .mobileHead img.profil {
+    width: 45px;
+    margin: 5% 5% 5% 15%;
+  }
+  .mobileSection .mobileHead img.message {
+    margin: 5%;
+  }
+  .mobileSection .mobileHead .search {
+    width: 100%;
+    height: 34px;
+    margin-left: 1%;
+    padding: 0 0.8rem 0 40px;
+    background: #EEF3F8;
+    border: 0;
+    border-radius: 5px;
+  }
+  .mobileSection .mobileOperations {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border: 1px solid rgb(240, 238, 238);
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    line-height: 0.9;
+    position: fixed;
+    bottom: 0;
+  }
+  .mobileSection .mobileOperations a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .mobileSection .mobileOperations p {
+    margin: 0;
+    font-size: 12px;
+  }
+  .mobileSection .mobileOperations .premium {
+    color: #915907;
+    max-width: 125px;
+    text-decoration: underline;
+  }
+  .deref {
+    margin: 15px 0 0 0;
+  }
+  .deref .shares {
+    width: 100%;
+    margin: 0;
+    padding: 25px 0 0 0;
+    /*.new_despatch {
+
+        .postAdd {
+            margin-top: 10%;
+        }
+    }*/
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,957 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #00000099;
+    background-color: #f3f2ef;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont,
+        Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen,
+        Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji,
+        Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+}
+
+@mixin noUnderline {
+    text-decoration: none;
+    color: #00000099;
+}
+
+
+.headpiece {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    line-height: 0.9;
+    background-color: white;
+    border: 1px solid rgb(240, 238, 238);
+
+}
+
+.searchEngine {
+    width: 33%;
+    margin-left: 8%;
+    display: flex;
+    align-items: center;
+
+
+    .search {
+        width: 48%;
+        height: 34px;
+        margin-left: 1%;
+        padding: 0 0.8rem 0 40px;
+        background: #EEF3F8;
+        border: 0;
+        border-radius: 5px;
+    }
+}
+
+.operations {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+
+    a {
+        @include noUnderline;
+
+        &:hover {
+            color: black;
+            font-weight: 600;
+
+        }
+    }
+
+    p {
+        margin: 0;
+        font-size: 12px;
+
+    }
+
+    .premium {
+        color: #915907;
+        max-width: 125px;
+        text-decoration: underline;
+    }
+}
+
+
+.mobileSection {
+    display: none;
+}
+
+
+
+//SOL KISIM
+
+
+
+.deref {
+
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 5.5% 8% 0 8%;
+
+}
+
+
+.content_newest {
+    width: 20%;
+
+    .content {
+        display: flex;
+        width: 100%;
+        height: 350px;
+        background-color: white;
+        border-radius: 5px;
+
+        .coverPhoto {
+            width: 100%;
+            border-radius: 5px 5px 0px 0px;
+
+        }
+
+        .profill {
+            width: 35%;
+            border-radius: 50%;
+            margin-top: -40px;
+        }
+
+        .coverImg {
+            font-weight: 500;
+
+            .a {
+                text-decoration: none;
+            }
+
+            .nameSurname {
+                color: #414040e6;
+            }
+
+            .viewProfile {
+                text-align: left;
+                padding: 7% 4% 4% 4%;
+                border-top: 1px solid #f3f2ef;
+                display: flex;
+                justify-content: space-between;
+
+                a {
+                    @include noUnderline;
+
+                    &:hover {
+                        background-color: #f3f2ef;
+                    }
+                }
+            }
+
+            .numberData {
+                color: #0A66C2;
+                font-weight: 600
+            }
+
+            .connetcions {
+                text-align: left;
+                padding: 0 4%;
+                display: flex;
+                justify-content: space-between;
+
+                a {
+                    @include noUnderline;
+                }
+
+            }
+
+            .networkWiden {
+                text-align: left;
+                padding: 0 4% 0 4%;
+
+                a {
+                    text-decoration: none;
+                    color: #000000E6;
+                }
+
+            }
+
+            .accesing {
+
+                a {
+                    @include noUnderline;
+                }
+
+                .access {
+                    border-top: 1px solid #f3f2ef;
+                    text-align: start;
+                    padding: 2% 4% 0 4%;
+
+
+                }
+
+                .iconBox {
+                    margin-top: -7%;
+                    margin-bottom: 2%;
+
+                    .mercado-match {
+                        margin-bottom: -9px;
+                    }
+
+                    .premium {
+                        text-decoration: underline;
+                        color: #000000E6;
+                    }
+                }
+            }
+
+            .myItems {
+                border-top: 1px solid #f3f2ef;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding-left: 4%;
+
+                .textItems {
+                    padding: 0 0 2% 4%;
+                    color: #000000E6;
+                }
+            }
+
+        }
+
+    }
+
+
+    .newest {
+        display: flex;
+        width: 100%;
+        height: 420px;
+        background-color: white;
+        border-radius: 5px;
+        margin-top: 3%;
+        border: 1px solid rgb(240, 238, 238);
+
+        span {
+            display: flex;
+            justify-content: flex-start;
+            margin: 16px 0 0 10px
+        }
+
+        ul {
+            margin-block-start: 0;
+            padding-inline-start: 0;
+            padding: 10px 10px 0 10px;
+
+            a {
+                text-decoration: none;
+            }
+
+            li {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                padding-bottom: 3%;
+                font-weight: 500;
+
+                span {
+                    margin-left: 6px;
+                    color: #00000099;
+                    margin: 0;
+                    padding-left: 5px;
+
+
+                }
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .groups {
+            color: #0A66C2;
+            font-weight: 600;
+            margin-top: 0;
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        .more {
+            margin-top: -9%;
+
+            a {
+                color: #00000099;
+                font-weight: 600;
+            }
+        }
+
+        .activities {
+            span {
+                font-weight: 600;
+                color: #0A66C2;
+                padding: 10px 40px 0 5px;
+            }
+
+            .activitiesPlus {
+                justify-content: space-between;
+
+                .plus {
+                    color: #00000099;
+                    font-size: 25px;
+                    margin-right: -15%;
+
+                }
+            }
+        }
+    }
+
+    .discover {
+        border-top: 1px solid #f3f2ef;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 12px;
+        width: 105%;
+
+        a {
+            color: #00000099;
+        }
+
+    }
+}
+
+// ORTA KISIM
+.shares {
+
+    width: 49%;
+    height: 700px;
+    border-radius: 5px;
+
+
+
+    .despatch {
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+
+        .avatarDespatch {
+            display: flex;
+            padding: 2%;
+
+            .avatar {
+                margin-right: 2%;
+            }
+
+            img {
+                width: 48px;
+            }
+
+            button {
+                margin: 4px 0;
+                font-size: 12px;
+                flex-grow: 1;
+                padding: 3%;
+                background: white;
+                text-align: start;
+                border: 1px solid #c5c4c2;
+                border-radius: 35px;
+
+
+                span {
+                    font-size: 14px;
+                    color: #00000099;
+                    font-weight: 500;
+                    font-family: -apple-system, system-ui, BlinkMacSystemFont,
+                        Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen,
+                        Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji,
+                        Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+
+                }
+            }
+        }
+
+        .plug-ins {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            border: none;
+            padding-bottom: 1%;
+
+
+            a {
+                @include noUnderline;
+                align-items: center;
+                display: flex;
+            }
+
+            span {
+                margin: 0 0 0 8px;
+                font-size: 13px;
+                font-weight: 500;
+                font-family: -apple-system, system-ui, BlinkMacSystemFont,
+                    Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen,
+                    Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji,
+                    Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+                color: #00000099;
+            }
+
+            .addPhotoButton {
+                border: none;
+                background: none;
+
+                svg {
+                    color: #378FE9;
+                }
+
+            }
+
+            .addVideoButton {
+                border: none;
+                background: none;
+
+                svg {
+                    color: #5F9B41;
+                }
+            }
+
+            .addActivity {
+
+                svg {
+                    color: #C37D16;
+                }
+
+            }
+
+            .addWriting {
+
+                svg {
+                    color: #E16745;
+                }
+
+            }
+
+        }
+    }
+
+    .line {
+        border: none;
+        border-top: 1px solid rgb(173, 173, 173);
+        width: 100%;
+    }
+
+    .new_despatch {
+        background-color: white;
+        width: 100%;
+        border-radius: 10px;
+
+        .postAdd {
+            width: 100%;
+            margin-top: 2%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 0.5px solid rgb(236, 236, 236);
+
+            .postPerson {
+                margin: 1% 2%;
+                display: flex;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                    color: #00000099;
+                    font-weight: 700;
+                }
+            }
+
+            .threePoint {
+                margin: 1% 2%;
+            }
+        }
+
+        .participant {
+            display: flex;
+
+            .participantPerson {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                padding: 0 0 8px;
+                margin: 2px 12px 0 0;
+
+                .pPhoto {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: 50px;
+                        padding: 10px 15px;
+                    }
+
+                }
+
+                .pName {
+                    display: flex;
+
+                    .userName {
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: #000000E6;
+                    }
+
+                    .partConnection {
+                        font-size: 14px;
+                        margin: 0 0 0 4px;
+                    }
+
+                    .ability {
+                        display: block;
+                        text-align: start;
+                    }
+
+                    .pTime {
+                        text-align: start;
+                    }
+                }
+
+                button {
+                    width: 20%;
+                    display: flex;
+                    justify-content: end;
+                    background: none;
+                    border: none;
+                    color: #0A66C2;
+                    //font-size: 16px;
+
+                    span {
+                        font-weight: 600;
+                        margin-left: 5px;
+                    }
+                }
+            }
+
+        }
+
+        .pExplanation {
+
+            .pCe {
+                text-align: start;
+                padding: 1% 2%;
+            }
+
+            .pContentExplanation {
+                color: #000000E6;
+                font-size: 14px;
+                text-align: start;
+            }
+
+            .pContentPhoto {
+                img {
+                    width: 100%;
+                    margin: 10px 0;
+                }
+            }
+
+            .remark {
+                width: 100%;
+
+                button {
+                    width: 50%;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    background-color: white;
+                    border: none;
+                }
+
+                span {
+                    font-weight: 600;
+                    font-size: 13px;
+                    color: #00000099;
+                    margin: 5% 5%;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+//SAĞ KISIM
+
+.advices {
+    width: 25%;
+    height: 350px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 12px;
+
+    .addEfflux {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            font-weight: 500;
+            font-size: 15px;
+            color: #000000E6;
+            margin: 0;
+        }
+    }
+
+
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+        }
+
+        .personPhoto {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .personContent {
+            text-align: start;
+
+
+            span {
+                font-weight: 500;
+                color: #000000E6;
+                font-size: 14px;
+                line-height: 0.7;
+
+            }
+
+            p {
+                line-height: 1;
+                margin: 10px 0;
+            }
+
+            button {
+                background: none;
+                font-weight: 500;
+                align-items: center;
+                border-radius: 50px;
+                border: 1px solid #00000099;
+                font-size: 16px;
+                color: #00000099;
+                padding: 6px 16px;
+                font-family: -apple-system, system-ui, BlinkMacSystemFont,
+                    Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen,
+                    Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji,
+                    Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+            }
+
+        }
+    }
+
+    .allAdvices {
+
+        a {
+            text-decoration: none;
+            color: #00000099;
+            font-size: 12px;
+        }
+
+        span {
+            display: flex;
+            padding: 2px 8px;
+            margin-top: 6%;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+    }
+}
+
+
+.footer {
+
+    .other {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 10% 2% 5% 2%;
+
+        li {
+            margin: 4px 8px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #00000099;
+        }
+    }
+}
+
+
+
+//MESAJLAŞMA KISMI
+.messagingPart {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+    border: 0.5px solid rgb(201, 201, 201);
+    bottom: 0;
+    right: 0;
+    width: 288px;
+    //height: 47px;
+    //height: 500px;
+    flex-direction: column;
+
+
+    .messaging {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+
+
+        .messagingPhoto {
+            display: flex;
+            margin-left: -2%;
+            margin-top: 2%;
+
+            img {
+                width: 35px;
+                margin: 0;
+            }
+
+
+            button {
+                background-color: white;
+                border: none;
+
+                //margin: 5%;
+                a {
+                    text-decoration: none;
+                    color: #272727e6;
+                    font-weight: 600;
+                }
+
+                span {
+                    font-style: 12px;
+                    font-family: -apple-system, system-ui, BlinkMacSystemFont,
+                        Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen,
+                        Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji,
+                        Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+                }
+            }
+
+        }
+
+
+        .messagingPlugins {
+            display: flex;
+
+            button {
+                background-color: white;
+                border: none;
+                font-weight: 800;
+
+                //margin: 5%;
+                a {
+                    text-decoration: none;
+                    color: #00000099;
+                }
+            }
+        }
+    }
+
+    // 
+
+    .messagesConcealed {
+        width: 100%;
+        display: none; // MESAJLARI GİZLEDİĞİM KISIM
+        justify-content: center;
+        flex-direction: column;
+
+        .messageSearch {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f3f2ef;
+            width: 90%;
+            height: 30px;
+            margin: 2% 5%;
+            border-radius: 5px;
+
+            input {
+                border: none;
+                background: none;
+            }
+
+            .searchVariants {
+                button {
+                    border: none;
+                    background: none;
+                }
+            }
+        }
+
+        .inBox {
+            display: flex;
+            margin: 2% 5%;
+
+            .inBoxImage {
+                img {
+                    width: 50px;
+                }
+            }
+
+            .inBoxPersonalInfo {
+                border-bottom: 1px solid rgb(218, 218, 218);
+
+                .inBoxPersonalName {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    h3 {
+                        margin: 0 2%;
+                    }
+
+                }
+
+                .inBoxMessage {
+                    margin: 2%;
+
+                    p {
+                        margin: 2%;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+// RESPONSİVE 
+
+@media screen and (max-width: 1000px) {
+
+    .headpiece,
+    .content_newest,
+    .advices,
+    .despatch,
+    .line,
+    .messagingPart {
+        display: none;
+    }
+
+
+    .mobileSection {
+        //width: 100%;
+        display: flex;
+        height: 50px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        border: 1px solid rgb(240, 238, 238);
+
+
+        .mobileHead {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            position: fixed;
+            top: 0;
+
+            img.profil {
+                width: 45px;
+                margin: 5% 5% 5% 15%
+            }
+
+            img.message {
+                margin: 5%;
+            }
+
+
+            .search {
+                width: 100%;
+                height: 34px;
+                margin-left: 1%;
+                padding: 0 0.8rem 0 40px;
+                background: #EEF3F8;
+                border: 0;
+                border-radius: 5px;
+
+            }
+        }
+
+        .mobileOperations {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            border: 1px solid rgb(240, 238, 238);
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            align-items: center;
+            line-height: 0.9;
+            position: fixed; //sabitleme
+            bottom: 0; // en alta sabitleme
+
+            a {
+                @include noUnderline;
+            }
+
+            p {
+                margin: 0;
+                font-size: 12px;
+
+            }
+
+            .premium {
+                color: #915907;
+                max-width: 125px;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .deref {
+        margin: 15px 0 0 0;
+
+
+        .shares {
+            width: 100%;
+            margin: 0;
+            padding: 25px 0 0 0;
+
+            /*.new_despatch {
+
+                .postAdd {
+                    margin-top: 10%;
+                }
+            }*/
+        }
+    }
+
+}
